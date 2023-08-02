@@ -1,0 +1,68 @@
+.swiper {
+   .title {
+      margin-bottom: 7px;
+   }
+   .swiper-wrapper {
+      .swiper-slide {
+         width: auto;
+         &__image {
+            & img{
+               height: 150px;
+               border: 1px solid rgba(0, 0, 0, 0.70);
+               padding: 5px 5px;
+            }
+         }
+         &__book-title {
+            @include adaptiv-font(15, 12);
+            margin:8px 0 5px 0;
+            width: 114px;
+         }
+         &__author {
+            color: rgba(0, 0, 0, 0.50);
+            @include adaptiv-font (12, 10);
+         }
+      }
+   }
+}
+
+
+
+// todo ======================= swiper ====================
+// .swiper-button-prev::after,
+// .swiper-button-next::after {
+//    color: $list-shadow;
+   // font-size: 80px;
+   // width: 20px;
+   // height: 20px;
+// }
+.swiper-pagination{
+   bottom: 0;
+}
+.swiper .swiper-pagination-bullet{
+   width: 10px;
+   height: 10px;
+   line-height: 20px;
+   font-size: 14px;
+   background-color: $list-shadow;
+}
+// .swiper .swiper-scrollbar{
+//    cursor: pointer;
+//    background-color: $list-shadow;
+// }
+
+// !=============================(min-width: 768px)====
+@media (min-width: 767.98px){
+   .swiper-slider__image img{
+      height: 220px;
+      padding: 11px;
+   }
+}
+
+// !=============================(min-width: 1920px)====
+// @media (min-width: 1919.98px){
+   // .swiper-slider__image img{
+      // width: 160px;
+      // height: 220px;
+      // padding: 11px;
+   // }
+// }

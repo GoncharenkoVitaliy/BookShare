@@ -1,0 +1,143 @@
+$fon: #ffffff;
+$footer: #E9E9E9;  // 
+$border: rgba(0, 0, 0, 0.7);
+$list: #f2eecb;   //цвет старого листа книги 
+$list-shadow: rgba(0, 0, 0, 0.50);   //-цвет стрелки and bulian
+// #f8ecc2  -цвет старого листа книги
+// #ffffee  -цвет старого листа книги
+$box-sh: 1px 1px 6px rgba(0, 0, 0, 0.6);
+//----------------------------------------------
+
+%roboto-300{
+   font-family: 'Roboto', "Arial", sans-serif;
+   font-weight:300;
+}
+%NotoSans-300{
+   font-family: 'Noto Sans', "Arial", sans-serif;
+   font-weight:300;
+}
+%NotoSans-400{
+   font-family: 'Noto Sans', "Arial", sans-serif;
+   font-weight:400;
+}
+%NotoSans-500{
+   font-family: 'Noto Sans', "Arial", sans-serif;
+   font-weight:500;
+}
+%NotoSans-700{
+   font-family: 'Noto Sans', "Arial", sans-serif;
+   font-weight:700;
+}
+
+// ================================================
+//! Резиновый шрифт (растягивающийся): 
+// бонус от "Фрилансер по Жизни"
+$maxWidth: 1920;  //самый большой размер по макету
+@mixin adaptiv-font($pcSize, $mobSize) {
+   $addSize: $pcSize - $mobSize;
+   $addMobSize: $addSize + $addSize * 0.7;
+   @media (max-width: 767px) {
+      font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+   }
+   @media (min-width: 767px) {
+      font-size: calc(#{$mobSize + px} + #{$addMobSize} * (100vw / #{$maxWidth}));
+   }
+}
+// Например:              /        14px         / /          9px   /
+// @include adaptiv-font( по макету на disktop-e, по макету на pone);
+// @include adaptiv-font(max, min);
+// ================================================
+
+//!Переменные. 
+//?  Объявление:             Вставка-значения:
+//  $fz:80px;               font-size: $fz;
+//  $text-color: #fff;      color: $text-color;
+//------------------------------------
+//!Шаблоны. {Вместо (%) можно использовать (.)}
+//?  Объявление:                         Вставка-значения:
+//  %name{                                @extend %name;
+//     border-bottom: 5px dashed red;
+//     font-size:12px;
+//     overflow:hidden;
+//  }
+//------------------------------------
+// !Миксины.
+//   @mixin fontz($f,$c){
+//     font-size: $f;
+//     color: $c;
+//   }
+
+//? Объявляем:                     Вызываем:
+// @mixin flexible () {            .centered-elements {
+//    display: flex;               @include flexible ();
+//    justify-content: center;     }
+//    align-items: center;
+// }
+// =======================================================
+//!       ====  desktop computer   ====
+//   -- DISCTOP --
+//?  @media (max-width: 1439.98px){
+//?  }
+//   @media (max-width: 1086.98px){
+//   }
+//?  @media (max-width: 1023.98px){
+//?  }
+
+//   -- TABLET -- (Планшет)
+//   @media (max-width: 991.98px){
+//   }
+
+//   -- MOBILE --
+//?  @media (max-width: 767.98px){
+//?  }
+//?  @media (max-width: 639.98px){
+//?  }
+
+//   -- MOBILE-SMALL --
+//   @media (max-width: 479.98px){
+//   }
+//   @media (max-width: 424.98px){
+//   }
+//   @media (max-width: 374.98px){
+//   }
+//?  @media (max-width: 319.98px){
+//?  }
+
+//!       ====  Mobile-ferst   ====
+//   -- MOBILE-SMALL --
+//?============= (min-width: 320px) =============
+//@media (min-width: 319.98px){
+//}
+//============= (min-width: 375px) =============
+//@media (min-width: 374.98px){
+//}
+//============= (min-width: 425px) =============
+//@media (min-width: 424.98px){
+//}
+//============= (min-width: 480px) =============
+//@media (min-width: 479.98px){
+//}
+
+//   -- MOBILE --
+//?============= (min-width: 640px) =============
+//@media (min-width: 639.98px){
+//}
+
+//   -- TABLET -- (Планшет)
+//?============= (min-width: 768px) =============
+//@media (min-width: 767.98px){
+//}
+
+//   -- DISCTOP --
+//?============= (min-width: 1024px) =============
+//  @media (max-width: 1023.98px){
+//  }
+//============= (min-width: 1087px) =============
+//   @media (max-width: 1086.98px){
+//   }
+//============= (min-width: 1440px) =============
+//  @media (max-width: 1439.98px){
+//  }
+//?============= (min-width: 1920px) =============
+//  @media (max-width: 1919.98px){
+//  }

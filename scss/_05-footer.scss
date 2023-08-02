@@ -1,0 +1,151 @@
+.footer{
+   background: $footer;
+   & a :hover{
+      // text-decoration: underline;
+      text-shadow: 1px 1px 1px #1919195c;
+   }
+   &__wrapper{
+      margin-top:30px;
+      padding: 0 0px 15px 0px;
+      // border: 1px solid blue;
+      @extend %NotoSans-300;
+      @include adaptiv-font(20, 14);
+      line-height: 1.3;
+      & h5{
+         @extend %NotoSans-400;
+         text-decoration: underline;
+      }
+   }
+   &__about-bookshare{
+      padding-bottom: 15px;
+   }
+   &__books{
+      padding-bottom: 15px;
+   }
+   &__safe-shelves{
+      padding-bottom: 15px;
+   }
+   &__socials{
+      padding-bottom: 33px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      .social a {
+         display: block;
+         width: 29px;
+         height: 29px;
+         margin: 0 8px 10px 0;
+         text-align: center;
+         color: #000;
+         background: #fff;
+         border: 1px solid #ccc;
+         border-radius: 6px;
+         box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+      }
+      .social:last-child{
+         margin: 0 0px 0px 0;
+      }
+      .social a:hover {color: #fff;}
+      .social svg {
+         margin-top: 3px;
+         width: 23px;
+         height: 23px;
+      }
+      .email a:hover {background: #5bc7ff;}
+      .facebook a:hover {background: #3b5998;}
+      .github a:hover {background: #191919;}
+      .instagram a:hover {background: #3f729b;}
+      .linkedin a:hover {background: #0e76a8;}
+      .telegram a:hover {background: #249bd7;}
+      .twitter a:hover {background: #00acee;}
+      .viber a:hover {background: #7b519d;}
+      .vk a:hover {background: #4a76a8;}
+      .whatsapp a:hover {background: #50b154;}
+   }
+   &__www{
+      @include adaptiv-font(15, 10);
+      text-align:center;
+      & p{
+         display: inline;
+      }
+   }
+}
+
+// !=============================(min-width: 768px)====
+@media (min-width: 767.98px){
+   .footer {
+      &__wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // для неявной ячейки
+      grid-auto-rows: auto;
+      grid-auto-columns: auto;
+      gap: 20px;
+      }
+      &__socials{
+         grid-row-start:2;
+         grid-row-end: 3;
+         grid-column-start: 2;
+         grid-column-end:4;
+         justify-content: right;
+         align-self:center;
+         padding: 0;
+         margin: 0;
+         .social a {
+            width: 32px;
+            height: 32px;
+         }
+         .social svg {
+            margin-top: 4px;
+            width: 24px;
+            height: 24px;
+         }
+      }
+      &__www{
+         grid-row-start:2;
+         grid-row-end: 3;
+         grid-column-start: 1;
+         grid-column-end:2;
+         align-self: self-center;
+         justify-self: left;
+         padding-top: 15px;
+      }
+   }
+}
+
+// !=============================(min-width: 1920px)====
+@media (min-width: 1919.98px){
+   .footer {
+      &__wrapper{
+         grid-template-columns: 1fr 1fr 1fr 1.5fr;
+         // для неявной ячейки
+         grid-auto-rows: auto;
+         grid-auto-columns: auto;
+         gap: 5px;
+      }
+      &__socials{
+         grid-row-start:1;
+         grid-row-end: 2;
+         grid-column-start: 4;
+         grid-column-end:5;
+         align-self: start;
+         .social a {
+            width: 48px;
+            height: 48px;
+         }
+         .social svg {
+            margin-top: 7px;
+            width: 32px;
+            height: 32px;
+         }
+      }
+      &__www {
+         grid-row-start:2;
+         grid-row-end: 3;
+         grid-column-start: 1;
+         grid-column-end:5;
+         justify-self:center;
+         padding-top: 110px;
+      }
+   }
+}

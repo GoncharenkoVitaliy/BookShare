@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Roboto:wght@300&display=swap');
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// ======================================
+@import "./_nullstyle.scss";
+@import "./_vars.scss";
+@import "./_01-header";
+@import "./_02-main-What-is";
+@import "./_03-swiper";
+@import "./_04-What-to-read";
+@import "./_05-footer";
+@import "./_06-categories.scss";
+// ======================================
+
+body{
+   height: 100%;
+   background: $fon  ;
+   @extend %roboto-300;
+   min-width: 320px;
+   overflow-x: hidden;
+   position: relative;
+}
+.stop-scroll {
+   overflow: hidden;
+   position: relative;
+   position: fixed;
+   left: 0;
+   top:0;
+   width:100vw;
+   height: 100vh;
+}
+.wrapper{
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.main{
+   flex: 1 1 auto;
+}
+.container {
+   // border: 1px solid red;
+   padding: 0;
+   width: 90.625vw;      //290px (90.625vw)
+   margin: 0 auto;
+}
+
+// ========= (min-width: 768) =======
+@media (min-width: 767.98px) {
+   .container {
+      width: 92.45vw;           //710px  92.45vw
+      // border: 2px solid blue;
+   }
+}
+
+// ========= (min-width: 1024) =======
+@media (min-width: 1023.98px) {
+   .container {
+      width: 80.76vw;           //827px       80.76vw
+      // border: 2px solid green;
+   }
+}
+
+// ========= (min-width: 1208) =======
+@media (min-width: 1207.98px) {
+   .container {
+      width: 78.15vw;      //944px      78.15vw   
+      // border: 2px solid brown;
+   }
+}
+
+// ========= (min-width: 1536) =======
+@media (min-width: 1535.98px) {
+   .container {
+      width: 69.08vw;      //1061px     69.08vw
+      // border: 2px solid blue;
+   }
+}
+// ========= (min-width: 1792) =======
+@media (min-width: 1791.98px) {
+   .container {
+      width: 65.74vw;      //1178   65.74vw
+      // border: 2px solid silver;
+   }
+}
+
+// ========= (min-width: 1920) =======
+@media (min-width: 1919.98px) {
+   .container {
+      width: 67.45vw;      //1295px (67.45vw)
+      // border: 2px solid purple;
+   }
+}

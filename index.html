@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <title>BookShare</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         
+         <div class="line"></div>
+         <div class="container container-menu">
+            <div class="menu">
+               <!-- ================================= -->
+               <button class="menu__logo">
+                  <div class="menu__logo-icon">
+                     <img src="img/001-menu/01_open-book.svg" alt="book">
+                  </div>
+                  <div class="menu__logo-text">Book <br> Share </div>
+               </button>
+               <!-- ================================= -->
+               <div class="menu__location">
+                  <img src="img/001-menu/02_pin-drop.svg" alt="location">
+                  <div class="menu__location__select">
+                     <select name="location" class="menu__location__select-city">
+                        <option select disableed value="Moscowe">Moscowe</option>
+                        <option value="Ekaterinburg">Ekaterinburg</option>
+                        <option value="Omsk">Omsk</option>
+                        <option value="Cheboksary">Cheboksary</option>
+                     </select>
+                  </div>
+               </div>
+               <!-- ================================= -->
+               <div class="menu__search">
+                  <form action="#" method="get" class="menu__search-wrapper">
+                     <div>
+                        <button type="reset" class="menu__search-btn btn">
+                           <img class="menu__search-btn_img_1" src="img/001-menu/03_search.svg" alt="">
+                           <img class="menu__search-btn_img_2" src="img/001-menu/03_search-2.svg" alt="">
+                        </button>
+                     </div>
+                     <div class="menu__search-input">
+                        <input class="search__input" type="text" placeholder="Enter the title of the book or author">
+                     </div>
+                  </form>
+               </div>
+               <!-- ================================= -->
+               <div class="menu__contacts">
+                  <div class="menu__contacts-login">
+                     <button class="btn btn-item">
+                        <img src="img/001-menu/04_Vector 1.svg" alt="">
+                        <div class="prompt">Register</div>
+                     </button>
+                  </div>
+                  <div class="menu__contacts-new">
+                     <button class="btn btn-item">
+                        <img src="img/001-menu/05_Vector 2.svg" alt="">
+                        <div class="prompt">New account</div>
+                     </button>
+                  </div>
+               </div>
+               <!-- ================================= -->
+               <div class="menu__burger">
+                  <nav class="nav burger__wrapper">
+                     <ul class="nav__list">
+                        <li class="nav__item"><a href="#" data-goto=".what-is-bookshare" class="nav__link">What is BookShare</a></li>
+                        <li class="nav__item"><a href="#" data-goto=".slider__book-find-in-moskow" class="nav__link">Books find in city</a></li>
+                        <li class="nav__item"><a href="#" data-goto=".what-to-read" class="nav__link">What to read</a></li>
+                        <li class="nav__item"><a href="#" data-goto=".footer" class="nav__link">Information block</a></li>
+                        <li class="nav__item"><a href="./categories.html" class="nav__link">Categories</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Пункт 6</a></li>
+                     </ul>
+                  </nav>
+                  <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+                     <span class="burger__line"></span>
+                  </button>
+               </div>
+            </div>
+            <div class="line line-one"></div>
+            <!-- ======================================= -->
+         </div>
+         <div class="line"></div>
+         <div class="header-box">
+            <div class="container">
+               <div class="header-box__content">
+                  <h1>Read it, let someone <br>else read it</h1>
+                  <div class="header-box__content-button">
+                     <button class="header-box__content__button-one">Share a Book</button>
+                     <button class="header-box__content__button-two">Find a Book</button>
+                  </div>
+                  </p>
+               </div>
+            </div>
+            <!-- ========================================= -->
+      </header>
+      <main class="main">
+         <section class="what-is-bookshare">
+            <div class="container">
+               <div class="box-text_1">
+                  <h2>What is BookShare?</h2>
+                  <p>The share process consists of a simple action based on the principle of "read — give to another".
+                     Participants of the movement leave their books on the street, in the subway, cafes and restaurants,
+                     and just in any public places so that anyone can read them
+                  </p>
+               </div>
+               <div class="box-text_2">
+                  <h3>How does it work?</h3>
+                  <ul>
+                     <li>Register a book on our website</li>
+                     <li>Write or paste the book number</li>
+                     <li>Leave it in a safe place</li>
+                     <li>Follow the book's journey around the world</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="slider__book-find-in-moskow">
+            <div class="container">
+               <div class="swiper">
+                  <h3 class="title">Books find in Moskow</h3>
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/001_The-Hobbit.png" alt="The Hobbit">
+                        </div>
+                        <h4 class="swiper-slide__book-title">The Hobbit</h4>
+                        <p class="swiper-slide__author">J. R. R. Tolkien</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/002_Invisible-dick.png" alt="Invisible dick">
+                        </div>
+                        <h4 class="swiper-slide__book-title">Invisible dick</h4>
+                        <p class="swiper-slide__author">Frank Topham</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/003_Alice-adventures-in-wonderland.png"
+                              alt="Alice adventures in wonderland">
+                        </div>
+                        <h4 class="swiper-slide__book-title">Alice adventures in wonderland</h4>
+                        <p class="swiper-slide__author">Lewis Carroll</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/004_Divergentni.png" alt="Divergentni">
+                        </div>
+                        <h4 class="swiper-slide__book-title">Divergentni
+                        </h4>
+                        <p class="swiper-slide__author">Veronika Rot</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/005_Night-Blade.png" alt="Night Blade">
+                        </div>
+                        <h4 class="swiper-slide__book-title">Night Blade
+                        </h4>
+                        <p class="swiper-slide__author">Garrett Robinson</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/006_Harry-Potter-and-the-goblet-of-fire.png"
+                              alt="Harry Potter and the goblet of fire">
+                        </div>
+                        <h4 class="swiper-slide__book-title">Harry Potter and the goblet of fire
+                        </h4>
+                        <p class="swiper-slide__author">J.K. Rowling</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/007_The-name-of-the-wind.png" alt="The name of the wind">
+                        </div>
+                        <h4 class="swiper-slide__book-title">The name of the wind</h4>
+                        <p class="swiper-slide__author">Patrick Rothfuss</p>
+                     </a>
+                     <a href="#" class="swiper-slide">
+                        <div class="swiper-slide__image">
+                           <img src="./img/003-slider/008_The-book-of-Bera.png" alt="The book of Bera">
+                        </div>
+                        <h4 class="swiper-slide__book-title">The book of Bera</h4>
+                        <p class="swiper-slide__author">Suzie Wilde</p>
+                     </a>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+                  <!-- If we need scrollbar -->
+                  <!-- <div class="swiper-scrollbar"></div> -->
+               </div>
+            </div>
+         </section>
+         <section class="what-to-read">
+            <div class="container">
+               <div class="what-to-read__wrapper">
+                  <h3>What to read</h3>
+                  <div class="what-to-read__box">
+                     <div class="what-to-read__image">
+                        <img src="./img/004-what-to-read/001.jpg" alt="What-to-read">
+                     </div>
+                     <div class="what-to-read__text-one">
+                        <p>Written more than 70 years ago, 1984 was George Orwell’s chilling prophecy about the future.
+                           And while 1984 has come and gone, his dystopian vision of a government that will do anything
+                           to control the narrative is timelier than ever...</p>
+                     </div>
+                     <div class="what-to-read__box">
+                        <p>• Nominated as one of America’s best-loved novels by PBS’s The Great American Read •</p>
+                     </div>
+                     <div class="what-to-read__text-three">
+                        <p>“The Party told you to reject the evidence of your eyes and ears. It was their final, most
+                           essential command.”</p>
+                     </div>
+                     <div class="what-to-read__text-four">
+                        <p>Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry
+                           of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its
+                           own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for
+                           himself, Winston can’t escape the fact that Big Brother is always watching...A startling and
+                           haunting novel, 1984 creates an imaginary world that is completely convincing from start to
+                           finish. No one can deny the novel’s hold on the imaginations of whole generations, or the
+                           power of its admonitions—a power that seems to grow, not lessen, with the passage of time.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__wrapper">
+               <div class="footer__about-bookshare">
+                  <h5>About BookShare</h5>
+                  <a href="#">
+                     <p>What is BookShare</p>
+                  </a>
+                  <a href="#">
+                     <p>How does it work</p>
+                  </a>
+                  <a href="#">
+                     <p>Countries & cities</p>
+                  </a>
+               </div>
+               <div class="footer__books">
+                  <h5>Books</h5>
+                  <a href="#">
+                     <p>Book catalog</p>
+                  </a>
+                  <a href="#">
+                     <p>Authors</p>
+                  </a>
+               </div>
+               <div class="footer__safe-shelves">
+                  <h5>Safe shelves</h5>
+                  <a href="#">
+                     <p>On the map</p>
+                  </a>
+                  <a href="#">
+                     <p>How to open your place</p>
+                  </a>
+                  <a href="#">
+                     <p>Add a shelf to the website</p>
+                  </a>
+               </div>
+               <div class="footer__socials">
+                  <div class="social email">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 512 512">
+                           <path fill="currentColor"
+                              d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <!-- <div class="social facebook">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 320 512">
+                           <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                     </a>
+                  </div> -->
+                  <div class="social github">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 496 512">
+                           <path fill="currentColor"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="social instagram">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 448 512">
+                           <path fill="currentColor"
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <!-- <div class="social linkedin">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 448 512">
+                           <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                        </svg>
+                     </a>
+                  </div> -->
+                  <div class="social telegram">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 448 512">
+                           <path fill="currentColor"
+                              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <!-- <div class="social twitter">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 512 512">
+                           <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                        </svg>
+                     </a>
+                  </div> -->
+                  <div class="social viber">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 512 512">
+                           <path fill="currentColor"
+                              d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="social vk">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 576 512">
+                           <path fill="currentColor"
+                              d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                        </svg>
+                     </a>
+                  </div>
+                  <!-- <div class="social whatsapp">
+                     <a href="#" target="_blank">
+                        <svg role="img" viewBox="0 0 448 512">
+                           <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                        </svg>
+                     </a>
+                  </div> -->
+               </div>
+               <div class="footer__www">
+                  <a href="#">
+                     <img src="./img/005-footer/Copyright.svg" alt="">
+                     <p>www.bookshare.com</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
