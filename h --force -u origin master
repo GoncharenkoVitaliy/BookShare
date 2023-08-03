@@ -1,0 +1,11 @@
+user.name=GoncharenkoVitaliy
+user.email=Vitalesss.87@gmail.com
+color.ui=auto
+push.default=simple
+credential.https://github.com.usehttppath=true
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:GoncharenkoVitaliy/BookShare.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
