@@ -48,19 +48,13 @@
       @include adaptiv-font (20, 12);
       padding-top: 5px;
    }
-   &__item__image {
+   &__item-image {
       border: 1px solid ;
       padding: 10px;
       width: 220px;
       margin-bottom: 10px;
       & img{
          width: 200px;
-      }
-   }
-   &__text{
-      &-book-title {
-      }
-      &-author {
       }
    }
 }
@@ -81,22 +75,18 @@ h4{
       &__item {
          flex-direction: row;
          align-items: flex-start;
-         &__image {
+         &-image {
             width: 270px;
             margin-right: 20px;
             & img{
                width: 250px;
             }
          }
-         &__text{
+         &-text{
             display: flex;
             flex-direction:column-reverse;
             // justify-content:center;
             align-items:flex-start;
-            &-book-title {
-            }
-            &-author {
-            }
          }
       }
    }

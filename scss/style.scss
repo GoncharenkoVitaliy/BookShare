@@ -38,7 +38,6 @@ body{
    flex: 1 1 auto;
 }
 .container {
-   // border: 1px solid red;
    padding: 0;
    width: 90.625vw;      //290px (90.625vw)
    margin: 0 auto;
@@ -48,7 +47,6 @@ body{
 @media (min-width: 767.98px) {
    .container {
       width: 92.45vw;           //710px  92.45vw
-      // border: 2px solid blue;
    }
 }
 
@@ -56,7 +54,6 @@ body{
 @media (min-width: 1023.98px) {
    .container {
       width: 80.76vw;           //827px       80.76vw
-      // border: 2px solid green;
    }
 }
 
@@ -64,7 +61,6 @@ body{
 @media (min-width: 1207.98px) {
    .container {
       width: 78.15vw;      //944px      78.15vw   
-      // border: 2px solid brown;
    }
 }
 
@@ -72,14 +68,12 @@ body{
 @media (min-width: 1535.98px) {
    .container {
       width: 69.08vw;      //1061px     69.08vw
-      // border: 2px solid blue;
    }
 }
 // ========= (min-width: 1792) =======
 @media (min-width: 1791.98px) {
    .container {
       width: 65.74vw;      //1178   65.74vw
-      // border: 2px solid silver;
    }
 }
 
@@ -87,6 +81,5 @@ body{
 @media (min-width: 1919.98px) {
    .container {
       width: 67.45vw;      //1295px (67.45vw)
-      // border: 2px solid purple;
    }
 }

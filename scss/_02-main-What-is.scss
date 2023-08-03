@@ -1,13 +1,13 @@
 .what-is-bookshare {
    @include adaptiv-font (20, 12);
    line-height: 1.2em;
-   .box-text_1 {
+   .box-text-1 {
       margin-top:30px;
       & p{
          padding: 5px 0 13px 0;
       }
    }
-   .box-text_2 {
+   .box-text-2 {
       margin-bottom: 30px;
       & ul {
          padding: 5px 0 0 0;
@@ -29,13 +29,13 @@ h3{
 // !=============================(min-width: 768px)====
 @media (min-width: 767.98px){
    .what-is-bookshare {
-      .box-text_1 {
+      .box-text-1 {
          margin-top:70px;
          & p{
             padding: 20px 0px 20px 0;
          }
       }
-      .box-text_2 {
+      .box-text-2 {
          margin-bottom: 70px;
          & ul {
             padding: 20px 0px 0 0;
@@ -46,13 +46,13 @@ h3{
 // !=============================(min-width: 1920px)====
 @media (min-width: 1919.98px){
    .what-is-bookshare {
-      .box-text_1 {
+      .box-text-1 {
          margin-top:100px;
          & p{
             padding: 32px 0px 36px 0;
          }
       }
-      .box-text_2 {
+      .box-text-2 {
          margin-bottom: 100px;
          & ul {
             padding: 32px 0px 0 0;
