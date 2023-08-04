@@ -1,3 +1,26 @@
+//! ============ Поиск - Крестик ===========
+// let no = document.querySelector('.no');
+const menuSearch = document.querySelector('.menu__search');
+let input = document.querySelector('.search__input');
+
+menuSearch.addEventListener ('mousemove', function () {
+   // console.log(event);
+   let btnImg1 = document.querySelector('.menu__search-btn-img-1');
+   let btnImg2 = document.querySelector('.menu__search-btn-img-2');
+   // btnImg1.style.backgroundColor = 'red';
+   let a = '';
+   if (input.value != a) {
+      btnImg1.classList.add('display__no');
+      btnImg2.classList.remove('display__no');
+   }
+   else {
+      btnImg1.classList.remove('display__no');
+      btnImg2.classList.add('display__no');
+   }
+})
+
+//! ============ Поиск - Крестик ===========
+
 //! =========== Swiper -- slider ===========
 new Swiper('.swiper', {
    // navigation: {
