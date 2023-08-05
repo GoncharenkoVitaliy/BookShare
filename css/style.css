@@ -261,7 +261,7 @@ h4, h3, h2 {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-.menu__search .display__no {
+.menu__search .display__none {
   display: none;
 }
 .menu__search-input {

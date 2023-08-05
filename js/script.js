@@ -1,21 +1,21 @@
 //! ============ Поиск - Крестик ===========
-// let no = document.querySelector('.no');
+// let no = document.querySelector('.none');
 const menuSearch = document.querySelector('.menu__search');
 let input = document.querySelector('.search__input');
 
-menuSearch.addEventListener ('mousemove', function () {
+menuSearch.addEventListener('mousemove', function () {
    // console.log(event);
    let btnImg1 = document.querySelector('.menu__search-btn-img-1');
    let btnImg2 = document.querySelector('.menu__search-btn-img-2');
    // btnImg1.style.backgroundColor = 'red';
    let a = '';
    if (input.value != a) {
-      btnImg1.classList.add('display__no');
-      btnImg2.classList.remove('display__no');
+      btnImg1.classList.add('display__none');
+      btnImg2.classList.remove('display__none');
    }
    else {
-      btnImg1.classList.remove('display__no');
-      btnImg2.classList.add('display__no');
+      btnImg1.classList.remove('display__none');
+      btnImg2.classList.add('display__none');
    }
 })
 
@@ -39,9 +39,9 @@ new Swiper('.swiper', {
       //    return '<span class="' + className + '">' + (index + 1) + '</span>';
       // },
       // scrollbar: {
-         // el: '.swiper-scrollbar',
-         // возможность перетаскивать скрол
-         // draggable: true,
+      // el: '.swiper-scrollbar',
+      // возможность перетаскивать скрол
+      // draggable: true,
       // },
    },
    // Курсор
@@ -79,7 +79,7 @@ new Swiper('.swiper', {
    slidePerGroup: 3,
    //Мультирядность  2 и более ряда
    // slidePerColumn: 2,
-}); 
+});
 //! =========== Swiper -- slider ===========
 
 //! ================ Burger ================
@@ -137,14 +137,14 @@ if (menuLinks.length > 0) {
 let links = document?.querySelectorAll('.btn-item');
 
 for (let i = 0; i < links.length; i++) {
-   links[i].onmouseover = function() {
+   links[i].onmouseover = function () {
       let prompt = document.querySelectorAll('.prompt');
       let too = prompt[i];
       too.style.opacity = '1';
       too.style.visibility = 'visible';
    }
 
-   links[i].onmouseout = function() {
+   links[i].onmouseout = function () {
       let prompt = document.querySelectorAll('.prompt');
       let too = prompt[i];
       too.style.opacity = '0';
