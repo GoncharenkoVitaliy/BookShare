@@ -190,7 +190,7 @@
          right: 0;
          top: 65px;
          z-index: 10000;
-         background-color: $fon; 
+         background-color: $footer; 
          padding: 30px;
          transform: translateX(110%);
          transition: transform 0.6s ease-in-out;
@@ -198,9 +198,10 @@
          width: 60%;
          max-width: 300px;
          height: calc(100vh - 65px);
-         & a{
-            background-color: $fon; 
-         }
+         background-color: $footer; 
+         // & a{
+            // color: $fon;
+         // }
          &__visible {
             transform: none;
          }

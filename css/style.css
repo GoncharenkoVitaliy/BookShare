@@ -344,7 +344,7 @@ h4, h3, h2 {
   right: 0;
   top: 65px;
   z-index: 10000;
-  background-color: #ffffff;
+  background-color: #E9E9E9;
   padding: 30px;
   -webkit-transform: translateX(110%);
           transform: translateX(110%);
@@ -356,9 +356,7 @@ h4, h3, h2 {
   width: 60%;
   max-width: 300px;
   height: calc(100vh - 65px);
-}
-.menu__burger .nav a {
-  background-color: #ffffff;
+  background-color: #E9E9E9;
 }
 .menu__burger .nav__visible {
   -webkit-transform: none;
